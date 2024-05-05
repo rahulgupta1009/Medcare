@@ -7,12 +7,12 @@ import { toast } from "react-toastify";
 
 const FeedbackForm = () => {
 
-    const [rating,setRating] = useState(0)
-    const [hover,setHover]= useState(0)
+    const [rating,setRating] = useState(0);
+    const [hover,setHover]= useState(0);
     const [reviewText,setReviewText]= useState("");
     const  [loading,setLoading]= useState(false);
 
-    const {id} = useParams();
+    const { id } = useParams();
 
     const handleSubmitReview = async e=>{
         e.parentDefault();

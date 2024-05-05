@@ -1,4 +1,3 @@
-
 import DoctorCard from "./../../components/Doctors/DoctorCard";
 import { doctors } from "./../../assets/data/doctors";
 

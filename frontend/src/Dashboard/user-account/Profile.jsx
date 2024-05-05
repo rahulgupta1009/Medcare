@@ -18,7 +18,7 @@ const Profile = ({ user }) => {
     password:'',
     photo: null,
     gender:'',
-    bloodGroup:'',
+    bloodType:'',
   });
 
   const navigate = useNavigate();
@@ -121,8 +121,8 @@ const Profile = ({ user }) => {
             <input 
               type="text" 
               placeholder="Blood Group" 
-              name="bloodGroup" 
-              value={formData.bloodGroup}
+              name="bloodType" 
+              value={formData.bloodType}
               onChange={handleInputChange}             
               className="w-full pr-4 py-3 border-b border-solid border-[#0066ff61]
               focus:outline-none focus:border-b-primaryColor text-[16px] leading-7 
@@ -203,4 +203,4 @@ const Profile = ({ user }) => {
   )
 }
 
-export default Profile
+export default Profile;

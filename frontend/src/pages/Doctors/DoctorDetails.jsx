@@ -31,7 +31,7 @@ const DoctorDetails = () => {
     averageRating,
     totalRating,
     specialization,
-    consultancyFee,
+    ticketPrice,
     photo,
   } = doctor;
 
@@ -115,7 +115,7 @@ const DoctorDetails = () => {
         <div>
           <SidePanel 
             doctorId={doctor._id} 
-            consultancyFee={consultancyFee}
+            ticketPrice={ticketPrice}
             timeSlots={timeSlots}
           />
         </div>

@@ -14,7 +14,7 @@ const Profile = ({doctorData}) => {
         bio:'',
         gender:'',
         specialization:'',
-        consultancyFee:0,
+        ticketPrice:0,
         qualifications:[],
         experiences:[],
         timeSlots:[],
@@ -31,7 +31,7 @@ const Profile = ({doctorData}) => {
           bio: doctorData?.bio,
           gender: doctorData?.gender,
           specialization: doctorData?.specialization,
-          consultancyFee: doctorData?.consultancyFee,
+          ticketPrice: doctorData?.ticketPrice,
           qualifications: doctorData?.qualifications,
           experiences: doctorData?.experiences,
           timeSlots: doctorData?.timeSlots,
@@ -263,8 +263,8 @@ const Profile = ({doctorData}) => {
                       <p className="form__lable">Consultancy Fee*</p>
                       <input type="number"
                         placeholder="100"
-                        name="consultancyFee"
-                        value={formData.consultancyFee}
+                        name="ticketPrice"
+                        value={formData.ticketPrice}
                         className="form__input"
                         onChange={handleInputChange} 
                       />

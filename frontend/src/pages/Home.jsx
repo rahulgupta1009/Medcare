@@ -186,16 +186,12 @@ const Home = () => {
 
           </Link>
         </div>
-
-       </div>
-       
-      </div>
-
-       
+       </div>      
+      </div>      
     </div>
    </section>
 
-   <About />
+   {/* <About /> */}
 
    {/* Services section */}
    <section>
