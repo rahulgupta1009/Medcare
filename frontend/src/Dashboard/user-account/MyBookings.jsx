@@ -6,7 +6,11 @@ import Error from "../../components/Error/Error";
 
 const MyBookings = () => {
 
-    const {data:appointments, loading, error} = useFetchData(`${BASE_URL}/users/appointments/my-appointments`)
+    const {
+      data:appointments, 
+      loading, 
+      error
+    } = useFetchData(`${BASE_URL}/users/appointments/my-appointments`);
 
   return (
     <div>
@@ -31,4 +35,4 @@ const MyBookings = () => {
   );
 };
 
-export default MyBookings
+export default MyBookings;

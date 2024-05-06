@@ -44,7 +44,7 @@ const Doctors = () => {
             type="search" 
             className="py-4 pl-4 pr-2 bg-transparent w-full focus:outline-none 
             cursor-pointer placeholder:text-textColor"
-            placeholder="Search doctor by name or specifications"
+            placeholder="Search doctor by name or specialisation"
             value={query}
             onChange={e=> setQuery(e.target.value)} 
           />

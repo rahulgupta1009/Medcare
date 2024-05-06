@@ -117,8 +117,8 @@ const Profile = ({doctorData}) => {
         addItem('qualifications', {
             startingDate: "", 
             endingDate: "", 
-            degree: "PHD", 
-            university: "PMCH"
+            degree: "", 
+            university: ""
         });
     };
 
@@ -138,8 +138,8 @@ const Profile = ({doctorData}) => {
         addItem('experiences', {
             startingDate: "", 
             endingDate: "", 
-            position: "Senior Surgeon", 
-            hospital: "AIIMS"
+            position: "", 
+            hospital: "",
         });
     };
 
@@ -370,7 +370,7 @@ const Profile = ({doctorData}) => {
                                 <p className="form__label">Hospital*</p>
                                 <input 
                                   type="text"
-                                  name="Hospital"
+                                  name="hospital"
                                   value={item.hospital}
                                   className="form__input"
                                   onChange={e=> handleExperienceChange(e, index)} />

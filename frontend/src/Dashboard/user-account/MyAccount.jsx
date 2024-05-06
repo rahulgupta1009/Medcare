@@ -17,7 +17,11 @@ const MyAccount = () => {
     const { dispatch } = useContext(authContext);
     const [tab, setTab] = useState('bookings');
 
-    const {data:userData, loading, error} = useGetProfile(`${BASE_URL}/users/profile/me`);
+    const {
+      data:userData, 
+      loading, 
+      error,
+    } = useGetProfile(`${BASE_URL}/users/profile/me`);
 
     console.log(userData, "userdata");
 
